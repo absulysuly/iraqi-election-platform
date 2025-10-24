@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iraqi Election Platform - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>لوحة معلومات الانتخابات العراقية</h1>
+            <h2>Iraqi Election Platform Dashboard</h2>
+        </header>
+
+        <main>
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-content">
+                        <h3>Total Registered Voters</h3>
+                        <p class="stat-number" id="totalVoters">0</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-content">
+                        <h3>Votes Cast</h3>
+                        <p class="stat-number" id="votesCast">0</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-content">
+                        <h3>Turnout Rate</h3>
+                        <p class="stat-number" id="turnoutRate">0%</p>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">🏛️</div>
+                    <div class="stat-content">
+                        <h3>Polling Stations</h3>
+                        <p class="stat-number" id="pollingStations">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="charts-section">
+                <div class="chart-card">
+                    <h3>Election Results by Region</h3>
+                    <div class="chart" id="regionChart">
+                        <div class="chart-bar">
+                            <div class="bar-label">Baghdad</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 75%;"></div>
+                                <span class="bar-value">75%</span>
+                            </div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="bar-label">Basra</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 62%;"></div>
+                                <span class="bar-value">62%</span>
+                            </div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="bar-label">Mosul</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 58%;"></div>
+                                <span class="bar-value">58%</span>
+                            </div>
+                        </div>
+                        <div class="chart-bar">
+                            <div class="bar-label">Erbil</div>
+                            <div class="bar-container">
+                                <div class="bar" style="width: 68%;"></div>
+                                <span class="bar-value">68%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-card">
+                    <h3>Real-time Updates</h3>
+                    <div class="updates-list" id="updatesList">
+                        <div class="update-item">
+                            <span class="update-time">10:30 AM</span>
+                            <span class="update-text">Polling stations opened across Baghdad</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="update-time">11:45 AM</span>
+                            <span class="update-text">70% voter turnout reported in Basra</span>
+                        </div>
+                        <div class="update-item">
+                            <span class="update-time">01:15 PM</span>
+                            <span class="update-text">Additional voting hours extended in Mosul</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <div class="info-card">
+                    <h3>About This Platform</h3>
+                    <p>This dashboard provides real-time information about the Iraqi elections. Monitor voter turnout, regional results, and live updates from polling stations across Iraq.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Iraqi Election Platform. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
